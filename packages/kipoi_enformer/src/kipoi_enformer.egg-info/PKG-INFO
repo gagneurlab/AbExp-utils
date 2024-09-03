@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kipoi-enformer
+Version: 0.0.1
+Summary: Kipoi-based variant effect prediction around the TSS using Enformer
+Author-email: Florian Hölzlwimmer <git.ich@frhoelzlwimmer.de>, George Tsitsiridis <gtsitsiridis@gmail.com>
+License: MIT licence
+Keywords: model zoo,deep learning,enformer,aparent2,computational biology,bioinformatics,genomics
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: cyvcf2>=0.30.28
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas>=2.2.1
+Requires-Dist: pyarrow>=16.1.0
+Requires-Dist: pyranges>=0.0.129
+Requires-Dist: kipoiseq@ git+https://github.com/gtsitsiridis/kipoiseq.git@master
+Requires-Dist: tensorflow-hub==0.16.1
+Requires-Dist: tensorflow==2.16.1
+Requires-Dist: polars>=1.5.0
+Requires-Dist: scikit-learn>=1.4.1.post1
+Requires-Dist: lightgbm>=4.3.0
+Requires-Dist: zarr>=2.15.0
+Requires-Dist: xarray>=2024.5.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu>=2.16.1; extra == "gpu"
